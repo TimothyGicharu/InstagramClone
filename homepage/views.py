@@ -13,7 +13,6 @@ from django.urls import reverse_lazy, reverse
 from django.forms import modelformset_factory
 from django.contrib import messages
 from django.db.models import Q
-# third- request looks for appropriate function to match and executes it (in this case it is an http response)
 
 
 class PostListView(LoginRequiredMixin, ListView):
