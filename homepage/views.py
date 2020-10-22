@@ -39,7 +39,7 @@ def likePost(request):
             Like.objects.filter(post=likedpost, liker=request.user).delete()
         else:
             m = Like(post=likedpost, liker=request.user)  # creating like object
-            m.save()  # saves into database
+            m.save()  # saves into database 
         return HttpResponse(likedpost.likes.count())
     else:
         return HttpResponse("Request method is not a GET")
